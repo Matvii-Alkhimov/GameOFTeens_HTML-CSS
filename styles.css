@@ -46,7 +46,6 @@ img {
     @media screen and (min-width: 800px) {
         font-size: 30px;
     }
-
     @media screen and (min-width: 1440px) {
         font-size: 40px;
     }
@@ -57,7 +56,6 @@ p {
     @media screen and (min-width: 800px) {
         font-size: 20px;
     }
-
     @media screen and (min-width: 1440px) {
         font-size: 30px;
     }
@@ -72,6 +70,9 @@ p {
     @media screen and (min-width: 800px) {
         padding: 20px 30px;
     }
+    @media screen and (min-width: 1440px) {
+        padding: 40px 50px;
+    }
 }
 
 .container-header {
@@ -83,6 +84,11 @@ p {
 .logo {
     height: 25px;
     font-size: 25px;
+
+    @media screen and (min-width: 1440px) {
+        font-size: 40px;
+        height: 40px;
+    }
 }
 
 .nav-list {
@@ -92,6 +98,10 @@ p {
 
     @media screen and (min-width: 800px) {
         width: 300px;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 400px;
+        font-size: 20px;
     }
 }
 
@@ -109,6 +119,9 @@ p {
     @media screen and (min-width: 800px) {
         padding: 100px 80px;
     }
+    @media screen and (min-width: 1440px) {
+        padding: 200px 150px;
+    }
 }
 
 .main-title {
@@ -120,6 +133,9 @@ p {
 
     @media screen and (min-width: 800px) {
         font-size: 30px;
+    }
+    @media screen and (min-width: 1440px) {
+        font-size: 40px;
     }
 }
 
@@ -133,6 +149,10 @@ p {
     @media screen and (min-width: 800px) {
         padding: 20px;
         font-size: 20px;
+    }
+    @media screen and (min-width: 1440px) {
+        padding: 30px;
+        font-size: 30px;
     }
 }
 
@@ -153,7 +173,9 @@ p {
 
     @media screen and (min-width: 800px) {
         height: 520px;
-        
+    }
+    @media screen and (min-width: 1440px) {
+        height: 300px;
     }
 }
 
@@ -163,6 +185,10 @@ p {
     justify-content: space-evenly;
     align-content: space-between;
     margin: -20px;
+
+    @media screen and (min-width: 1440px) {
+        flex-wrap: nowrap;
+    }
 }
 
 .advantage-item {
@@ -172,6 +198,11 @@ p {
     margin: 20px;
     padding: 10px;
     width: calc( ( 100% - 4 * 20px ) / 3 );
+
+    @media screen and (min-width: 1440px) {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .advantage-item:last-of-type {
@@ -191,6 +222,11 @@ p {
     @media screen and (min-width: 800px) {
         font-size: 20px;
         padding: 40px 120px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 30px;
+        padding: 40px 150px;
     }
 }
 
@@ -220,6 +256,10 @@ p {
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
+
+    @media screen and (min-width: 1440px) {
+        margin-top: 30px;
+    }
 }
 
 .it-list > h3,
@@ -230,6 +270,11 @@ p {
         left: 90px;
         top: -20px;
     }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 30px;
+        left: 185px;
+    }
 }
 
 .subject-item,
@@ -238,7 +283,6 @@ p {
     margin-top: 20px;
 
     @media screen and (min-width: 800px) {
-        /* width: calc( ( 100% - 20px * 3 ) / 2 ); */
         width: 140px;
         padding: 10px;
         border: 2px black solid;
@@ -253,6 +297,9 @@ p {
 
     @media screen and (min-width: 800px) {
         margin-top: 10px;
+    }
+    @media screen and (min-width: 1440px) {
+        font-size: 20px;
     }
 }
 
@@ -286,6 +333,13 @@ p {
         justify-content: space-evenly;
         margin-top: 30px;
     }
+
+    @media screen and (min-width: 1440px) {
+        flex-wrap: nowrap;
+        margin: 0;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
 }
 
 .teacher-item {
@@ -306,6 +360,12 @@ p {
         margin: 10px;
         font-size: 20px;
     }
+
+    @media screen and (min-width: 1440px) {
+        width: 260px;
+        height: 430px;
+        margin: 0;
+    }
 }
 
 .teacher-item:not(:last-of-type) {
@@ -313,24 +373,48 @@ p {
 }
 
 .teacher-picture {
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px;
-        max-height: 460px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    max-height: 460px;
+    width: 100%;
+
+    @media screen and (min-width: 1440px) {
+        height: 260px;
         width: 100%;
+    }
+}
+
+.teacher-name {
+    @media screen and (min-width: 1440px) {
+        font-size: 20px;
+    }
 }
 
 .teachers-description {
     margin: 0px 30px;
+
+    @media screen and (min-width: 1440px) {
+        font-size: 15px;
+    }
 }
 
 .teacher-contacts {
     display: flex;
     justify-content: space-around;
+
+    @media screen and (min-width: 1440px) {
+        justify-content: space-evenly;
+    }
 }
 
 .teacher-contact {
     height: 50px;
     width: 50px;
+
+    @media screen and (min-width: 1440px) {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .contact-link {
@@ -351,21 +435,49 @@ p {
     align-content: center;
 }
 
+.selection-conts {
+    @media screen and (min-width: 1440px) {
+        display: flex;
+    }
+}
+
+.selection-vars-container,
+.selection-list {
+    @media screen and (min-width: 1440px) {
+        width: calc( 100% / 3 );
+    }
+}
+
 .selection-vars-container {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (min-width: 1440px) {
+        margin: 0;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .selection-text-span {
+    width: 400px;
     margin-top: 20px;
     font-size: 20px;
     color: red;
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (min-width: 1440px) {
+        margin-left: 0;
+    }
 }
 
 .selection-var {
     width: calc( ( 100% - 30px ) / 2 );
     text-align: center;
+
+    
 }
 
 .selection-var__svg {
@@ -373,20 +485,40 @@ p {
     height: 50px;
 }
 
+.selection-var__text {
+    @media screen and (min-width: 1440px) {
+        font-size: 20px;
+    }
+}
+
 .selection-or {
     color: red;
     font-size: 30px;
     height: 30px;
+
+    @media screen and (min-width: 1440px) {
+        width: 70px;
+    }
 }
 
 .selection-list {
     text-align: left;
     padding-left: 20px;
+
+    @media screen and (min-width: 1440px) {
+        border-left: 2px black solid;
+        padding-left: 40px;
+        font-size: 20px;
+    }
 }
 
 .selection-title {
     text-align: center;
     margin-bottom: 10px;
+
+    @media screen and (min-width: 1440px) {
+        margin-top: 0;
+    }
 }
 
 .selection-item:not(:last-of-type) {
@@ -407,6 +539,9 @@ p {
         justify-content: space-evenly;
         margin-top: 30px;
     }
+    /* @media screen and (min-width: 1440px) {
+        
+    } */
 }
 
 
@@ -428,32 +563,58 @@ p {
         margin: 10px;
         font-size: 20px;
     }
+
+    @media screen and (min-width: 1440px) {
+        width: calc( ( 100% - 30px * 4 ) / 3);
+
+    }
 }
 
 .review-item:nth-of-type(4),
 .review-item:nth-of-type(5),
 .review-item:nth-of-type(6) {
     display: none;
+    
+
+    
 }
 
 .review-item:nth-of-type(4) {
     @media screen and (min-width: 800px) {
         display: block;
-        text-align: center;
-        padding-bottom: 20px;
-        height: 900px;
+        /* box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75); */
+        /* text-align: center; */
+        /* padding-bottom: 20px; */
+        /* height: 900px; */
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border-radius: 6px;
-
-    /* @media screen and (min-width: 800px) { */
-        width: calc( ( 100% - 30px * 4 ) / 2);
-        margin: 10px;
-        font-size: 20px;
-    /* } */
+        /* border-radius: 6px; */
+        /* width: calc( ( 100% - 30px * 4 ) / 2); */
+        /* margin: 10px; */
+        /* font-size: 20px; */
     }
 }
+
+.review-item:nth-of-type(5),
+.review-item:nth-of-type(6) {
+    @media screen and (min-width: 1440px) {
+        display: block;
+        /* box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+        text-align: center;
+        padding-bottom: 20px;
+        height: 900px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border-radius: 6px; */
+    }
+}
+
 .review-image {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -494,11 +655,20 @@ p {
 }
 
 .review-cont {
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin: 20px 20px 0 20px;
     font-size: 20px;
+
 
     @media screen and (min-width: 800px) {
         margin: 0 30px;
+    }
+    
+}
+
+.review {
+    @media screen and (min-width: 1440px) {
+        font-size: 20px;
     }
 }
 
@@ -512,6 +682,9 @@ p {
 
     @media screen and (min-width: 800px) {
         padding: 30px;
+    }
+    @media screen and (min-width: 1440px) {
+        /* align-items: center; */
     }
 }
 
@@ -527,6 +700,7 @@ p {
         position: absolute;
         top: -25px;
     }
+
 }
 
 .contacts-list {
@@ -539,6 +713,7 @@ p {
         display: flex;
         flex-wrap: wrap;
     }
+    
 }
 
 .contact-item {
